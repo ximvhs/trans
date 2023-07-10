@@ -278,13 +278,11 @@
     }
 }
 
-/* test start */
+/* slider start */
 .slider {
     position: relative;
     width: 100%;
     height: 700px;
-    object-fit: cover;
-    object-position: center;
     overflow: hidden;
 }
 
@@ -300,12 +298,14 @@
 
 .slide {
     width: 20%;
-    transition: 2s;
+    transition: 1s;
 }
 
 .slide img {
     width: 100%;
     height: 700px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* css for manual slide navigation */
@@ -339,14 +339,17 @@
 
 #radio2:checked~.first {
     margin-left: -20%;
+
 }
 
 #radio3:checked~.first {
     margin-left: -40%;
+
 }
 
 #radio4:checked~.first {
     margin-left: -60%;
+
 }
 
 /* css for automatic navigation */
@@ -389,22 +392,47 @@
 /* btn control */
 .btn-control {
     position: absolute;
-    top: 0;
+    top: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
-
 }
 
 .control {
     font-size: 40px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
     color: var(--light);
+    background: var(--primary);
+    border-radius: 50%;
 }
 
-/* test end */
+.btn-control-prev {
+    position: absolute;
+    left: 0;
+
+}
+
+.btn-control-prev i {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.btn-control-next {
+    position: absolute;
+    right: 0;
+}
+
+.btn-control-next i {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+/* slider end */
 
 
 /*** Feature ***/

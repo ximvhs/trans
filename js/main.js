@@ -112,33 +112,37 @@
 
 })(jQuery);
 
-
-// test 
-
-let counter = 1;
-setInterval(() => {
-    document.getElementById("radio" + counter).checked = true;
+// slide auto
+let counter = 0;
+function nextPage() {
     counter++;
     if (counter > 4) {
         counter = 1;
     }
-}, 4000);
+    document.getElementById("radio" + counter).checked = true;
+}
+let intervalId = setInterval(nextPage, 4000);
 
+// slide control
 const btnPrev = document.querySelector(".btn-control-prev");
 const btnNext = document.querySelector(".btn-control-next");
 
 btnNext.addEventListener("click", () => {
+    clearInterval(intervalId);
     counter++;
     if (counter > 4) {
         counter = 1;
     }
     document.getElementById("radio" + counter).checked = true;
+    intervalId = setInterval(nextPage, 4000);
 });
 
 btnPrev.addEventListener("click", () => {
+    clearInterval(intervalId);
     counter--;
     if (counter < 1) {
         counter = 4;
     }
     document.getElementById("radio" + counter).checked = true;
+    intervalId = setInterval(nextPage, 4000);
 });
