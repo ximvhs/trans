@@ -195,10 +195,12 @@
     margin-bottom: 10px;
 }
 
-.nav-info {}
-
 .nav-cty {
     left: 2px;
+}
+
+a.nav-item.nav-link.nav-cty {
+    margin-right: -52px;
 }
 
 @media (min-width: 992px) {
