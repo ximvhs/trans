@@ -90,8 +90,10 @@
 }
 
 .navbar-light .navbar-nav .nav-link.fs-20 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 34px;
+    color: var(--dark);
+    font-weight: bold;
 }
 
 .navbar-light li {
@@ -135,7 +137,7 @@
     top: 40px;
     left: 0;
     width: 0%;
-    height: 2px;
+    height: 3px;
     background: var(--primary);
     transition: 0.3s;
 }
@@ -169,7 +171,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: var(--dark);
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .navbar-light.sticky-top {
