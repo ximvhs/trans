@@ -328,9 +328,6 @@ a.nav-item.nav-link.nav-cty {
     }
 }
 
-
-
-
 /*** Header ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
@@ -592,7 +589,7 @@ a.nav-item.nav-link.nav-cty {
 /*** Feature ***/
 @media (min-width: 992px) {
     .container.feature {
-        max-width: 100% !important;
+        /* max-width: 100% !important; */
     }
 
     .feature-text {
