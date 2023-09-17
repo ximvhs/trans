@@ -18,6 +18,14 @@
     z-index: 99;
 }
 
+.img-br {
+    border-radius: 10px;
+}
+
+.img-br-50 {
+    border-radius: 50%;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -38,6 +46,8 @@
 .btn {
     font-weight: 600;
     transition: .5s;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .btn.btn-primary,
@@ -556,7 +566,8 @@ a.nav-item.nav-link.nav-cty {
 .service-item,
 .price-item,
 .team-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    border-radius: 10px;
 }
 
 .service-item img,
